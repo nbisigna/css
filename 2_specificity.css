@@ -1,0 +1,27 @@
+/* selector specificity */
+/* inline style */
+/* number of ids */
+/* number of classes */
+/* number of elements */
+
+/* style=0 ids=1 class=2 element=2 */
+
+/* !important > style > id > element */
+
+body {
+  text-align: center;
+  font-size: 48px;
+}
+
+div {
+  color: black;
+}
+
+.heading {
+  color: red;
+  color: green;
+}
+
+#title {
+  color: blue;
+}

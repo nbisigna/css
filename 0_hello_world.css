@@ -1,0 +1,25 @@
+/* color */
+/* font family */
+/* font weight */
+/* line height */
+/* font size */
+/* text wrap */
+/* overflow */
+
+body {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  background-color: yellow;
+  text-align: center;
+  /* em relative to parent */
+  /* rem relative to html root */
+  line-height: 3rem;
+}
+
+div {
+  width: 100px;
+  overflow: scroll;
+  /* word-wrap: break-word; */
+}

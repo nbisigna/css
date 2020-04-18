@@ -1,0 +1,8 @@
+#div1 {
+  display: inline;
+}
+#div2 {
+  display: inline-block;
+  background-color: red;
+  /* height: 100px; */
+}

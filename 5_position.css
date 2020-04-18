@@ -1,0 +1,20 @@
+body {
+  height: 1000px;
+  width: 100vw;
+}
+
+#parent {
+  height: 50%;
+  width: 50%;
+  background-color: blue;
+}
+
+#child {
+  position: sticky;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  z-index: 1;
+}

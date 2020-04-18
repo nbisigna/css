@@ -1,0 +1,38 @@
+/* https://www.w3schools.com/cssref/css_selectors.asp */
+
+body {
+  text-align: center;
+}
+
+div {
+  color: black;
+}
+
+#id {
+  color: green;
+}
+
+.class {
+  color: blue;
+}
+
+/* elements with class or id */
+#id2,
+.class2 {
+  color: red;
+}
+
+/* has both class and id */
+#id3.class3 {
+  color: purple;
+}
+
+/* class with parent id */
+#id4 > .class4 {
+  color: green;
+}
+
+/* descendant class of id */
+#id5 .class5 {
+  color: blue;
+}

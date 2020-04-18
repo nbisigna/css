@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: red;
+}
+.grid-container {
+  display: grid;
+  /* display: inline-grid; */
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 25% 80% 25% 25%;
+  grid-template-areas:
+    'nav nav nav nav nav'
+    'menu main main main main'
+    '. . . . .'
+    'foot foot foot foot foot';
+  grid-gap: 10px;
+  /* grid-column-gap: 10px; */
+  /* grid-column-row: 10px; */
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: red;
+  width: 100vw;
+}
+
+.grid-item {
+  background-color: blue;
+  text-align: center;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 20px;
+  /* height: 100px; */
+  /* width: 100px; */
+}
+
+.item-1 {
+  grid-area: nav;
+}
+.item-1::after {
+  content: 'Nav';
+  font-size: 15vh;
+}
+.item-2 {
+  grid-area: menu;
+}
+.item-2::after {
+  content: 'Menu';
+  font-size: 15vh;
+}
+.item-3 {
+  grid-area: main;
+}
+.item-3::after {
+  content: 'Main';
+  font-size: 15vh;
+}
+.item-4 {
+  grid-area: foot;
+}
+.item-4::after {
+  content: 'Foot';
+  font-size: 15vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .item-1 {
+    grid-area: 1 / 1 / span 1 / span 5;
+  }
+  .item-2 {
+    grid-area: 3 / 1 / span 1 / span 5;
+  }
+  .item-3 {
+    grid-area: 2 / 1 / span 1 / span 5;
+  }
+  .item-4 {
+    grid-area: 5 / 1 / span 1 / span 5;
+  }
+}
