@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 2px black solid;
+  /* Transformations */
+  /* transform: translate(100px, 100px); */
+  /* transform: translateX(100px); */
+  /* transform: translateY(100px); */
+  /* transform: translate3d(100px, 100px, 100px); */
+
+  /* Rotations */
+  /* transform: rotate(360deg); */
+  /* transform: rotate3d(10, 20, 30, 45deg); */
+  /* transform: rotateX(45deg); */
+  /* transform: rotateY(45deg); */
+  /* transform: rotateZ(45deg); */
+
+  /* Skews */
+  /* transform: skew(20deg, 40deg); */
+  /* transform: skewX(20deg); */
+  /* transform: skewY(20deg); */
+
+  /* Scale */
+  /* transform: scale(1.5, 2); */
+  /* transform: scale3d(1.5, 2); */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(2); */
+  /* transform: scaleZ(2); */
+
+  /* Matrix */
+  /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  /* transform: matrix(0.5, 2, 3, 1, 100, 100); */
+  /* transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 100, 0, 0.5); */
+
+  /* Perspective */
+  /* transform-origin: top; */
+  /* transform: perspective(1.25cm) rotate3d(1, 0, 0, 45deg); */
+  transition: transform 2s;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/ */

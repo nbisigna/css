@@ -1,5 +1,19 @@
+p {
+  height: 100px;
+  padding: 20px;
+  border: 1px solid black;
+  line-height: 2em;
+  text-indent: 60px;
+}
+
 @media only screen and (max-width: 600px) {
   p {
-    overflow: scroll;
+    overflow: hidden;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
 }

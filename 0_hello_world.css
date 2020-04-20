@@ -21,5 +21,6 @@ body {
 div {
   width: 100px;
   overflow: scroll;
+  /* text-overflow: ellipsis; */
   /* word-wrap: break-word; */
 }
