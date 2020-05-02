@@ -48,8 +48,6 @@ body {
   animation-name: spin;
   animation-iteration-count: infinite;
   animation-duration: 2.5s;
-  transform: rotateY(0deg);
-  transform-style: preserve-3d;
 }
 @keyframes spin {
   0% {
